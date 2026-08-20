@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="gallery-container">
+      <h1>Image Gallery</h1>
+
+      <!-- Category Filters -->
+      <div class="filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="nature">Nature</button>
+        <button class="filter-btn" data-category="city">Cities</button>
+        <button class="filter-btn" data-category="animal">Animals</button>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery" id="gallery">
+        <div class="gallery-item" data-category="nature">
+          <img
+            src="https://images.pexels.com/photos/36680404/pexels-photo-36680404.jpeg"
+            alt="Nature"
+          />
+        </div>
+
+        <div class="gallery-item" data-category="nature">
+          <img
+            src="https://images.pexels.com/photos/29339349/pexels-photo-29339349.jpeg"
+            alt="Nature"
+          />
+        </div>
+
+        <div class="gallery-item" data-category="nature">
+          <img
+            src="https://images.pexels.com/photos/38939757/pexels-photo-38939757.jpeg"
+            alt="Nature"
+          />
+        </div>
+
+        <div class="gallery-item" data-category="animal">
+          <img
+            src="https://images.pexels.com/photos/30861272/pexels-photo-30861272.jpeg"
+            alt="Animal"
+          />
+        </div>
+
+        <div class="gallery-item" data-category="animal">
+          <img
+            src="https://images.pexels.com/photos/38495933/pexels-photo-38495933.jpeg"
+            alt="Animal"
+          />
+        </div>
+
+        <div class="gallery-item" data-category="animal">
+          <img
+            src="https://images.pexels.com/photos/5177767/pexels-photo-5177767.jpeg"
+            alt="Animal"
+          />
+        </div>
+
+        <div class="gallery-item" data-category="city">
+          <img
+            src="https://images.pexels.com/photos/4743065/pexels-photo-4743065.jpeg"
+            alt="City"
+          />
+        </div>
+        <div class="gallery-item" data-category="city">
+          <img
+            src="https://images.pexels.com/photos/16098712/pexels-photo-16098712.jpeg"
+            alt="City"
+          />
+        </div>
+        <div class="gallery-item" data-category="city">
+          <img
+            src="https://images.pexels.com/photos/28997670/pexels-photo-28997670.jpeg"
+            alt="City"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="close-btn" id="closeBtn">&times;</button>
+
+      <button class="prev-btn" id="prevBtn">&#10094;</button>
+
+      <img id="lightboxImage" src="" alt="" />
+
+      <button class="next-btn" id="nextBtn">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
